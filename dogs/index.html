@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les Chiens</title>
+  <link rel="stylesheet" href="../src/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <button class="burger" type="button" popovertarget="menu" aria-label="Menu">
+      🍔
+    </button>
+
+    <nav class="menu" id="menu" popover aria-label="Main menu">
+      <button class="menu__close burger burger--close" type="button" popovertarget="menu" popovertargetaction="hide" aria-label="Close the menu" autofocus>
+        🍔
+      </button>
+
+      <h4>menu</h4>
+
+      <ul class="menu__list">
+        <li><a class="menu__link" href="../index.html">Accueil principal</a></li>
+        <li class="menu__item">
+          <a class="menu__link" href="../cats/index.html">Les chats</a>
+          <ul>
+            <li><a class="menu__link" href="../cats/chat1.html">chat 1</a></li>
+            <li><a class="menu__link" href="../cats/chat2.html">chat 2</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="../dogs/index.html">Les chiens</a>
+          <ul>
+            <li><a class="menu__link" href="../dogs/chien1.html">chien 1</a></li>
+            <li><a class="menu__link" href="../dogs/chien2.html">chien 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Page Chien</h1>
+      <p>
+      Les différents chiens que l'ont peut trouver
+    </p>
+      <li><a class="menu__link" href="../dogs/chien1.html">chien 1</a></li>
+      <li><a class="menu__link" href="../dogs/chien2.html">chien 2</a></li>
+  </main>
+</body>
+
+</html>

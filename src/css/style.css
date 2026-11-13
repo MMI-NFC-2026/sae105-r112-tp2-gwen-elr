@@ -1,15 +1,12 @@
 /* code css à faire */
 /* --- menu (popover plein écran) ------------------------------------------ */
-/* La feuille du navigateur a déjà fixé le panneau à l'écran
-   (position: fixed; inset: 0) : on l'étire, sans positionner. */
+/* La feuille du navigateur a déjà fixé le panneau à l'écran*/
 .menu {
   width: 100%;
   height: 100%;
   border: 0;
 }
-/* Page figée tant que le menu est ouvert.
-   :has() — extrait fourni : seul moyen, en CSS, de faire remonter l'état
-   du menu jusqu'à la page. */
+/* Page figée tant que le menu est ouvert.*/
 html:has(.menu:popover-open) {
   overflow: hidden;
 }
@@ -33,7 +30,6 @@ html:has(.menu:popover-open) {
   }
 }
 /* --- Rotation du bouton de fermeture ---*/
-/* À l'ouverture, même position « hamburger » */
 @starting-style {
   .menu:popover-open .burger--close {
     transform: none;
@@ -50,4 +46,20 @@ html:has(.menu:popover-open) {
   .menu .burger--close {
     transition: none;
   }
+}
+.media--fullwidth {
+  width: 100%;
+  height: auto;
+}
+
+nav > h4::before {
+  content: url("../../publics/icones/streamline-block-entertainment-books.svg");
+}
+
+nav > ul > li > a::before {
+  content: url("../../publics/icones/streamline-block-arrowheads-left-chevron.svg");
+}
+
+nav > ul > li > ul > li > a::before {
+  content: url("../../publics/icones/la-archive.svg");
 }
